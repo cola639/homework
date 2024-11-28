@@ -28,7 +28,7 @@ pipeline {
         stage('2.Compile') {  // Second stage: Compile the application
             agent {
                 docker {  // Use a Docker agent with the specified image
-                    image 'node:18-alpine'  // Specifies the Docker image to use for this stage
+                    image 'node:20-alpine'  // Specifies the Docker image to use for this stage
                 }
             }
             steps {
